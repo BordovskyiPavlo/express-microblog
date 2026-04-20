@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+</head>
+<body class="base body-bg">
+  <div class="base row">
+    <header class="base header">
+      <nav class="base navbar navbar-mainbg">
+        <div class="base navbar-container">
+          <a href="">
+            <svg class="base navbar-image" style="background-image: url('/images/logo.svg');"></svg>
+          </a>
+          <ul class="base navbar-nav">
+            <li class="base nav-item">
+              <a class=" base nav-link domine" href="/"><img src="/images/home.png">Home</a>
+            </li>
+            <li class="base nav-item">
+              <a class="base nav-link domine" href="/contact"><img src="/images/contact.png" >Contact</a>
+            </li>
+          </ul>
+          <a class="base btn-post" href="">Post</a>
+        </div>
+      </nav>
+    </header>
+    <main class="base container-main">
+      <div class="base main-content">
+        <div class="base tablist">
+          <div class="base tablist-item">
+            <div class="base item-content">
+              <a class="base domine">New</a>
+              <div class="active-item"></div>
+            </div>
+          </div>
+          <div class="base tablist-item">
+            <div class="base item-content">
+              <a class="base domine">Following</a>
+              <div class="notActive-item"></div>
+            </div>
+          </div>
+        </div>
+        <div class="base post-container">
+          <div class="base post-content">
+            <div class="base user-image">
+              <div></div>
+            </div>
+            <div class="base post-form">
+              <form action="/submit" method="POST" class="base post-form" id="submit-form">
+                <textarea name="postText" id="" >What's happening?</textarea>
+                <div class="base submit-container">
+                  <input type="submit" class="base btn-form domine"></input>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <section id="content">
+
+
+
+  
+  

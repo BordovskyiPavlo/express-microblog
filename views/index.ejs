@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+
+<% posts.forEach(function(post) { %>
+<div class="base container">
+  <div class="base container-content">
+    <div class="base user-image">
+      <div></div>
+    </div>
+    <div class="base content-text">
+      <h3><%= post.username %></h3> 
+      <p><%= post.text %></p>
+    </div>
+  </div>
+</div>
+<% }); %>
+
+</section>
+</div>
+</main>
+</div>
+</body>
+</html>
