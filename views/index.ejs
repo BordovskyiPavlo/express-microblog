@@ -1,7 +1,7 @@
 <%- include("partials/header.ejs") %>
 
 <% posts.forEach(function(post) { %>
-<div class="base container">
+<div class="base container" id=`container-${<%= post.id %>}`>
   <div class="base container-content">
     <div class="base user-image">
       <div></div>
@@ -9,11 +9,21 @@
     <div class="base content-text">
       <h3><%= post.username %></h3> 
       <p><%= post.text %></p>
+      <div class="base content-forms">
+        <form action="/edit" method="POST" class="base content-form" >
+          <input type="hidden" name="postId" value="<%= post.id %>">
+          <input type="text" name="postText" value="<%= post.text %>" class="base edit-input">
+          <button type="submit" class="base btn-form domine">Edit</button>
+        </form>
+        <form action="/delete" method="POST" class="base content-form">
+          <input type="hidden" name="postId" value="<%= post.id %>">
+          <button type="submit" class="base btn-form domine">Delete</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
 <% }); %>
-
 </section>
 </div>
 </main>
